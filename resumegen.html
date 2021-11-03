@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+       <title >Resume generetor </title>
+    </head>
+    <body >
+        
+        <div class="container" id="cv-form">
+            
+        <h1 class="text-center title ">RESUME GENERATOR</h1> 
+        <p class="text-right  "><SPan>&copy</SPan> Amith's code</p> 
+
+        <div class="row">
+          
+
+            <div class="col-md-6 pinf mt-5">
+                <h2>Personel Information</h2>
+
+                
+
+                <h3>Profile Pic</h3>
+                <div>
+                    Select an image : 
+                    <input type="file" id="fileInput">
+                </div>
+                        
+               
+
+                <div class="form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" id="nameField"
+                     placeholder="Enter your name" 
+                     class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contactField">Your Contact</label>
+                    <input type="text" id="contactField"
+                     placeholder="Enter your contact number" 
+                     class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="emailField">Your Email</label>
+                    <input type="text" id="emailField"
+                     placeholder="Enter your email" 
+                     class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="addressField">Your Home Address</label>
+                    <textarea type="text" id="addressField" class="form-control">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="linkedinField">Your LinkedIn id</label>
+                    <input type="text" id="linkedinField"
+                     placeholder="Enter your LinkedIn id" 
+                     class="form-control">
+                     </div>
+                     <div class="form-group mt-2">
+                        <label for="objField">Objective</label>
+                        <textarea type="text" id="objectiveField" class="form-control">
+                        </textarea>
+                    </div>
+                    <div class="form-group mt-2" id="we">
+                            <label for="weField">Work Experience</label>
+                            <textarea type="text" id="weField" class="form-control weField">
+                            </textarea>  
+                     </div>
+            </div>
+       
+        <div class="col-md-6 mt-5 pinf" >
+            <h2>Proffessional Information</h2>
+         
+            
+            <p class="form-group">Academic qualification</p>
+
+            <div class="form-group">
+                <label for="schoolField">School</label>
+                <input type="text" id="schoolField"
+                 placeholder="Enter your school" 
+                 class="form-control">
+            </div>
+            
+
+                 <div class="form-group">
+                    <label for="linkedinField">10th marks</label>
+                    <input type="text" id="tenthField"
+                     placeholder="Enter your percentage" 
+                     class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="pucField">Pre-University college</label>
+                    <input type="text" id="pucField"
+                     placeholder="Enter your college" 
+                     class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedinField">PU marks</label>
+                    <input type="text" id="puField"
+                     placeholder="Enter your percentage" 
+                     class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="enggField">Engineering college</label>
+                    <input type="text" id="enggField"
+                     placeholder="Enter your college" 
+                     class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="linkedinField">SGPA</label>
+                    <input type="text" id="sgpaField"
+                     placeholder="Enter your SGPA" 
+                     class="form-control">
+                  </div>  
+                <div class="form-group mt-2" id="os">
+                    <label for="osField">Other skills</label>
+                    <textarea type="text" id="osField" class="form-control osField">
+                    </textarea>  
+             </div>        
+               
+              </div> 
+          </div> 
+          <div class="container mt-3 text-center" id="gbutton">
+            <button onclick="generateCV()" class="btn btn-dark btn-lg">Generate Your Resume</button>
+        </div>
+        </div>
+
+
+
+
+
+          
+        <div class="container" id="cv-template">
+
+
+            <div class="row printed">
+
+                <div class="col-md-4 text-center py-5 background"> 
+                     
+                <div class="container ">                    
+                    <div class="pp " id="fileDisplayArea"></div>    
+                    <p id="namet">x</p>
+                    <p id="contactt">x</p>
+                    <p id="addresst">x</p>
+                    <hr/>
+                  
+                    <p>
+                        <a id="emailt" href="#1">x</a>
+                        <br>
+
+                        <a id="linkedint" href="#1">x</a>
+                    </p>
+                </div>
+                </div>
+
+
+             <div class="col-md-8 py-5 ">
+                 <h1 class="text-center" id="namet2" style="font-weight: 800;">x</h1> 
+
+
+                 <div class="card mt-2">
+                     <div class="card-header">
+                         <h3>Objective</h3>
+                     </div>
+                     <div class="card-body" id="objectivet">
+                        <p>x </p>
+                     </div>
+                 </div>
+
+                 <div class="card mt-2">
+                    <div class="card-header">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body" id="wet">
+                       <p>1 </p>
+                    </div>
+                </div>
+
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body" >
+                        <ul><li><UL><p id="schoolt">1</p></li>
+                       <li><p id="tent">1</p></li></UL>
+                       <li><UL><p id="puct">1</p></li>
+                       <li><p id="put">1</p></li></UL>
+                       <li><UL><p id="enggt">1</p></li>
+                       <li><p id="sgpat">1</p></li></UL>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h3>Other Skills</h3>
+                    </div>
+                    <div class="card-body" id="ost">
+                       <p>1 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3 text-center prnt">
+            <button onclick="printCV()" class="btn background btn-large" value="submit" type="submit">Print</button>
+        </div>
+
+             </div>      
+    </body>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+     
+        </script>
+    
+</html>

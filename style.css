@@ -1,0 +1,55 @@
+#cv-template{
+    display: none;
+}
+
+.title{
+font-family: stencil;
+font-weight: 1000;
+font-size: 600%;
+}
+
+ .background{
+     background-color: rgb(171, 248, 82);
+ }
+
+ .pinf{
+    font-family: fantasy ;
+    font-size: 20px;
+ }
+
+@media print {
+    .prnt{
+        display: none;
+    }
+    
+}
+
+ .form-group{
+     font-size: 125%;
+ }
+ #page-wrapper {
+    width: 30%;
+    background: #FFF;
+    border-top: 5px solid #69c773;
+    
+  }
+  
+  h1 {
+      margin-top: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+ .pp{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+   max-width: 100px;
+   height: auto; 
+  
+ 
+ }
+
+  
